@@ -6,10 +6,13 @@
 // DOM element references
 // search form
 // search input
+var searchInput
 // container/section for today's weather
+var todaysWeather
 // container/section for the forecast 
+var dayForecast
 // search history container
-
+var SearchHistory
 
 // Function to display the search history list.
 function renderSearchHistory() {

@@ -18,28 +18,73 @@
     <!-- aside with the search form -->
     <aside>
         <h2 class="search-title">Search for a City:</h2>
-        <div class="form-group"><input type="text" placeholder="San Diego"></div>
-        <div class="form-group"><button class="search-button">Search</button></div>
+        <div class="searchinput"><input type="text" id="cityInput" placeholder="San Diego"></div>
+        <div class="searchbutton"><button class="search-button" id="cityName" onclick="GetInfo()">Search</button></div>
 
         <!-- search history div -->
-        <div class="search-history"></div>
+        <div class="searchhistory"></div>
     </aside>
 
 
     <!-- container -->
     <!-- section for today's weather -->
-    <div class="todays-weather"></div>
+    <div class="todays-weather">
+        <h2 id="cityName"></h2>
+    </div>
+
+    <!-- todays weather infor displays here -->
+    <!-- <p id="todaysweather"></p> -->
 
     <!-- section for the forecast -->
     <div class="forecast">
-        <h3>5-Day Forecast:</h3>
+        <h3 id="dayForecast">5-Day Forecast:</h3>
+        <!-- forecast info displays below -->
+        <div id="weatherContainer">
+            <div id="iconsContainer">
+                <div class="icons">
+                    <p class="weather" id="day1"></p>
+                    <div class="image"><img src="https://via.placeholder.com/10x10" class="imgClass" id="img1" alt="">
+                    </div>
+                    <p class="minValues" id="day1Min">Loading...</p>
+                    <p class="maxValues" id="day1Max">Loading...</p>
+                </div>
+                <div class="icons">
+                    <p class="weather" id="day2"></p>
+                    <div class="image"><img src="https://via.placeholder.com/10x10" class="imgClass" id="img2" alt="">
+                    </div>
+                    <p class="minValues" id="day2Min">Loading...</p>
+                    <p class="maxValues" id="day2Max">Loading...</p>
+                </div>
+                <div class="icons">
+                    <p class="weather" id="day3"></p>
+                    <div class="image"><img src="https://via.placeholder.com/10x10" class="imgClass" id="img3" alt="">
+                    </div>
+                    <p class="minValues" id="day3Min">Loading...</p>
+                    <p class="maxValues" id="day3Max">Loading...</p>
+                </div>
+                <div class="icons">
+                    <p class="weather" id="day4"></p>
+                    <div class="image"><img src="https://via.placeholder.com/10x10" class="imgClass" id="img4" alt="">
+                    </div>
+                    <p class="minValues" id="day4Min">Loading...</p>
+                    <p class="maxValues" id="day4Max">Loading...</p>
+                </div>
+                <div class="icons">
+                    <p class="weather" id="day5"></p>
+                    <div class="image"><img src="https://via.placeholder.com/10x10" class="imgClass" id="img5" alt="">
+                    </div>
+                    <p class="minValues" id="day5Min">Loading...</p>
+                    <p class="maxValues" id="day5Max">Loading...</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- use day.js to easily format dates -->
     <script src=""></script>
     <script src=""></script>
     <script src=""></script>
-    <script src="./Assets/script.js"></script>
+    <script src="./Assets/main.js"></script>
 
 </body>
 
