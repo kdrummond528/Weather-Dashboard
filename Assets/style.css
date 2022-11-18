@@ -54,12 +54,21 @@ input {
     margin-left: 5px;
 }
 
+#searchHistory {
+    margin-left: 1%;
+    margin-top: 10px;
+    border-top: 1px solid rgb(161, 159, 159);
+    width: 98%;
+}
+
+#searchHistory button {}
+
 /* container on the top with todays weather */
 .todays-weather {
     border: 1px solid black;
-    width: 630px;
+    width: 645px;
     height: 150px;
-    margin-top: -90px;
+    margin-top: -112px;
     margin-left: 300px;
     margin-bottom: 20px;
 }
@@ -80,14 +89,6 @@ input {
     width: auto;
 }
 
-/* weather container for all 5 days of weather */
-#iconsContainer {
-    height: 120px;
-    width: 120px;
-    border-radius: 10px;
-    display: inline;
-}
-
 /* weather container for the individual days weather */
 .icons {
     display: inline-block;
@@ -99,14 +100,43 @@ input {
     border: 1px solid black;
 }
 
-/* individual day weather */
+/* weather container for all 5 days of weather */
+#iconsContainer {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    display: inline;
+}
+
+/* individual day weather for todays weather */
+#day1 {
+    padding-top: 5px;
+    text-align: left;
+    margin-left: 5px;
+    font-size: 22px;
+}
+
+/* individual day weather for 5 day forecast */
 #day1,
 #day2,
 #day3,
 #day4,
-#day5 {
+#day5,
+#day6 {
     text-align: left;
     margin-left: 5px;
+}
+
+
+/* weather data for today in top container */
+.todaysweatherdata {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.day1imgClass {
+    margin-top: -43px;
+    margin-left: 110px;
 }
 
 /* weather img for the days weather */

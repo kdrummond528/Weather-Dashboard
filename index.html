@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./Assets/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Weather Dashboard</title>
 </head>
 
@@ -15,54 +16,62 @@
     </header>
 
     <!-- container with the search form -->
-    <section>
+    <aside>
+        <!-- search title -->
+        <h2 class="search-title">Search for a City:</h2>
+        <!-- city search input -->
+        <div class="searchinput">
+            <input type="search" value="" id="cityInput" onchange="searchHistory()" placeholder="San Diego">
+        </div>
+        <!-- city search button -->
+        <div class="searchbutton">
+            <button class="search-button" id="cityName" onclick="GetInfo()">Search</button>
+        </div>
 
-        <aside>
-            <!-- search title -->
-            <h2 class="search-title">Search for a City:</h2>
-            <!-- city search input -->
-            <div class="searchinput">
-                <input type="text" id="cityInput" placeholder="San Diego">
-            </div>
-            <!-- city search button -->
-            <div class="searchbutton">
-                <button class="search-button" id="cityName" onclick="GetInfo()">Search</button>
-            </div>
-
-            <!-- search history div -->
-            <div class="searchhistory">
-
-            </div>
-        </aside>
-    </section>
+        <!-- search history div -->
+        <div id="searchHistory">
+        </div>
+    </aside>
 
     <!-- container displaying weather data-->
     <section>
+
         <!-- section for today's weather -->
         <div class="todays-weather">
-            <h2 id="cityName"></h2>
-        </div>
 
-        <!-- section for the forecast -->
-        <div class="forecast">
-            <h3 id="dayForecast">5-Day Forecast:</h3>
-            <div>
-
+            <!-- todays date -->
+            <div class="todaysdate">
+                <!-- populate city name from search results -->
+                <h2 id="cityName"></h2>
+                <p class="weather" id="day1"></p>
             </div>
 
-            <!-- forecast info displays below -->
+            <!-- todays weather icon -->
+            <div class="day1imgClass">
+                <img src="" id="img1" alt="">
+            </div>
+
+            <!-- todays weather data -->
+            <div class="todaysweatherdata">
+                <p class="temp-Values" id="day1Temp"></p><br>
+                <p class="wind-Values" id="day1Wind"></p><br>
+                <p class="humidity-Values" id="day1Humidity"></p><br>
+            </div>
+
+        </div>
+
+        <!-- section for the 5 day forecast -->
+        <div class="forecast">
+            <!-- title for 5 day forecast container -->
+            <h3 id="dayForecast">5-Day Forecast:</h3>
+
+            <!-- 5 day forecast info container -->
             <div id="weatherContainer">
+
+                <!-- container with 5 day icons -->
                 <div id="iconsContainer">
-                    <div class="icons">
 
-                        <p class="weather" id="day1"></p>
-                        <div class="image"><img src="" class="imgClass" id="img1" alt="">
-                        </div>
-                        <p class="tempValues" id="day1Temp"></p>
-                        <p class="windValues" id="day1Wind"></p>
-                        <p class="humidityValues" id="day1Humidity"></p>
-                    </div>
-
+                    <!-- day 2 icon -->
                     <div class="icons">
                         <p class="weather" id="day2"></p>
                         <div class="image"><img src="" class="imgClass" id="img2" alt="">
@@ -72,6 +81,7 @@
                         <p class="humidityValues" id="day2Humidity"></p>
                     </div>
 
+                    <!-- day 3 icon -->
                     <div class="icons">
                         <p class="weather" id="day3"></p>
                         <div class="image"><img src="" class="imgClass" id="img3" alt="">
@@ -80,6 +90,8 @@
                         <p class="windValues" id="day3Wind"></p>
                         <p class="humidityValues" id="day3Humidity"></p>
                     </div>
+
+                    <!-- day 4 icon -->
                     <div class="icons">
                         <p class="weather" id="day4"></p>
                         <div class="image"><img src="" class="imgClass" id="img4" alt="">
@@ -88,6 +100,8 @@
                         <p class="windValues" id="day4Wind"></p>
                         <p class="humidityValues" id="day4Humidity"></p>
                     </div>
+
+                    <!-- day 5 icon -->
                     <div class="icons">
                         <p class="weather" id="day5"></p>
                         <div class="image"><img src="" class="imgClass" id="img5" alt="">
@@ -96,14 +110,27 @@
                         <p class="windValues" id="day5Wind"></p>
                         <p class="humidityValues" id="day5Humidity"></p>
                     </div>
+
+                    <!-- day 6 icon -->
+                    <div class="icons">
+                        <p class="weather" id="day6"></p>
+                        <div class="image"><img src="" class="imgClass" id="img6" alt="">
+                        </div>
+                        <p class="tempValues" id="day6Temp"></p>
+                        <p class="windValues" id="day6Wind"></p>
+                        <p class="humidityValues" id="day6Humidity"></p>
+                    </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
+
     <!-- use day.js to easily format dates -->
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
+    ]
     <script src="./Assets/main.js"></script>
 
 </body>
