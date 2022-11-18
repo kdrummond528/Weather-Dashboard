@@ -14,19 +14,29 @@
         <h1 class="pagetitle">Weather Dashboard</h1>
     </header>
 
-    <!-- container  -->
-    <!-- aside with the search form -->
-    <aside>
-        <h2 class="search-title">Search for a City:</h2>
-        <div class="searchinput"><input type="text" id="cityInput" placeholder="San Diego"></div>
-        <div class="searchbutton"><button class="search-button" id="cityName" onclick="GetInfo()">Search</button></div>
+    <!-- container with the search form -->
+    <section>
 
-        <!-- search history div -->
-        <div class="searchhistory"></div>
-    </aside>
+        <aside>
+            <!-- search title -->
+            <h2 class="search-title">Search for a City:</h2>
+            <!-- city search input -->
+            <div class="searchinput">
+                <input type="text" id="cityInput" placeholder="San Diego">
+            </div>
+            <!-- city search button -->
+            <div class="searchbutton">
+                <button class="search-button" id="cityName" onclick="GetInfo()">Search</button>
+            </div>
 
+            <!-- search history div -->
+            <div class="searchhistory">
 
-    <!-- container -->
+            </div>
+        </aside>
+    </section>
+
+    <!-- container displaying weather data-->
     <section>
         <!-- section for today's weather -->
         <div class="todays-weather">
