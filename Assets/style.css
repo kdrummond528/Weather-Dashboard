@@ -74,15 +74,13 @@ input {
     text-align: left;
 }
 
+/* continer where 5 day forecast weather populates */
 #weatherContainer {
     height: auto;
     width: auto;
 }
 
-#icons {
-    display: inline;
-}
-
+/* weather container for all 5 days of weather */
 #iconsContainer {
     height: 120px;
     width: 120px;
@@ -90,6 +88,7 @@ input {
     display: inline;
 }
 
+/* weather container for the individual days weather */
 .icons {
     display: inline-block;
     color: white;
@@ -100,6 +99,7 @@ input {
     border: 1px solid black;
 }
 
+/* individual day weather */
 #day1,
 #day2,
 #day3,
@@ -109,11 +109,13 @@ input {
     margin-left: 5px;
 }
 
+/* weather img for the days weather */
 .imgClass {
     height: 50px;
     width: 50px;
 }
 
+/* date for the weather being displayed */
 .weather {
     margin: 5px;
     border-radius: 5px;
@@ -121,6 +123,7 @@ input {
     font-weight: bold;
 }
 
+/* temperature values */
 .tempValues {
     text-align: left;
     font-size: 12px;
@@ -128,6 +131,7 @@ input {
     margin-left: 5px;
 }
 
+/* wind values */
 .windValues {
     text-align: left;
     font-size: 12px;
@@ -135,6 +139,7 @@ input {
     margin-left: 5px;
 }
 
+/* humidity values  */
 .humidityValues {
     text-align: left;
     font-size: 12px;
