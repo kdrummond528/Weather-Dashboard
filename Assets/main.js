@@ -1,3 +1,4 @@
+// function to get weather data
 function GetInfo() {
     var newName = document.getElementById("cityInput");
     var cityName = document.getElementById("cityName");
@@ -23,6 +24,7 @@ function GetInfo() {
         .catch(err => alert("Something went wrong."))
 }
 
+// function to autopopulate results at initial page load
 function DefaultScreen() {
     document.getElementById("cityInput").defaultValue = "San Diego";
     GetInfo();

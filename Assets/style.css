@@ -87,6 +87,14 @@ input {
     margin-bottom: 20px;
 }
 
+aside {
+    width: 28%;
+}
+
+.maincontainer {
+    width: 70%
+}
+
 /* container containing 5 day forecast */
 .forecast {
     padding-left: 300px;
