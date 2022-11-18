@@ -10,34 +10,18 @@
     <title>Weather Dashboard</title>
 </head>
 
+<!-- function to preload weather data on initial pg opening -->
+
 <body onload="DefaultScreen()">
     <header>
         <h1 class="pagetitle">Weather Dashboard</h1>
     </header>
 
-    <!-- container with the search form -->
-    <aside>
-        <!-- search title -->
-        <h2 class="search-title">Search for a City:</h2>
-        <!-- city search input -->
-        <div class="searchinput">
-            <input type="search" value="" id="cityInput" onchange="searchHistory()" placeholder="San Diego">
-        </div>
-        <!-- city search button -->
-        <div class="searchbutton">
-            <button class="search-button" id="cityName" onclick="GetInfo()">Search</button>
-        </div>
-
-        <!-- search history div -->
-        <div id="searchHistory">
-        </div>
-    </aside>
-
     <!-- container displaying weather data-->
     <section class="maincontainer">
 
         <!-- section for today's weather -->
-        <div class="todays-weather">
+        <section class="todays-weather">
 
             <!-- todays date -->
             <div class="todaysdate">
@@ -58,7 +42,7 @@
                 <p class="humidity-Values" id="day1Humidity"></p><br>
             </div>
 
-        </div>
+        </section>
 
         <!-- section for the 5 day forecast -->
         <div class="forecast">
@@ -126,6 +110,24 @@
             </div>
 
         </div>
+
+
+        <!-- container with the search form -->
+        <section class="searchcontainer">
+            <!-- search title -->
+            <h2 class="search-title">Search for a City:</h2>
+            <!-- city search input -->
+            <div class="searchinput">
+                <input type="search" value="" id="cityInput" onchange="searchHistory()">
+            </div>
+            <!-- city search button -->
+            <div class="searchbutton">
+                <button class="search-button" id="cityName" onclick="GetInfo()">Search</button>
+            </div>
+            <!-- search history container -->
+            <div id="searchHistory">
+            </div>
+        </section>
 
     </section>
 

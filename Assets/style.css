@@ -20,9 +20,17 @@ header {
     padding-top: 7px;
 }
 
-/* aside container with city weather search */
-aside {
+/* container with city weather search */
+.searchcontainer {
     width: 270px;
+    height: auto;
+    margin-top: -360px;
+}
+
+.maincontainer {
+    margin-top: 130px;
+    width: auto;
+    position: fixed;
 }
 
 /* city weather search title */
@@ -85,14 +93,6 @@ input {
     margin-top: -112px;
     margin-left: 300px;
     margin-bottom: 20px;
-}
-
-aside {
-    width: 28%;
-}
-
-.maincontainer {
-    width: 70%
 }
 
 /* container containing 5 day forecast */
