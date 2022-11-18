@@ -2,7 +2,6 @@
 function GetInfo() {
     var newName = document.getElementById("cityInput");
     var cityName = document.getElementById("cityName");
-    // cityName.innerHTML = "" + newName.value + ""
 
     fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + newName.value + "&appid=7597491b6242d4f906fcc00b4ac13a89")
         .then(response => response.json())
@@ -61,3 +60,5 @@ function searchHistory() {
         document.getElementById("searchHistory").appendChild(button);
     })
 }
+
+// function to search past history again
