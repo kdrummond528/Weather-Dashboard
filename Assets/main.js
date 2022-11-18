@@ -24,7 +24,7 @@ function GetInfo() {
 }
 
 function DefaultScreen() {
-    document.getElementById("cityInput").defaultValue = "Atlanta";
+    document.getElementById("cityInput").defaultValue = "San Diego";
     GetInfo();
 }
 

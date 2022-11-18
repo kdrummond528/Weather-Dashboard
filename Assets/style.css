@@ -37,7 +37,7 @@ input {
     border: darkgray solid 1px;
     border-radius: 4px;
     padding: 9px 9px;
-    width: 240px;
+    width: 260px;
     font-size: 14px;
     margin-bottom: 10px;
     margin-left: 5px;
@@ -48,12 +48,13 @@ input {
     color: white;
     background-color: blue;
     opacity: 0.5;
-    padding: 5px 110px;
+    padding: 7px 110px;
     border-radius: 4px;
     border: none;
     margin-left: 5px;
 }
 
+/* container where search history will populate */
 #searchHistory {
     margin-left: 1%;
     margin-top: 10px;
@@ -61,7 +62,20 @@ input {
     width: 98%;
 }
 
-#searchHistory button {}
+/* buttons from previous history under search  */
+#searchHistory button {
+    background-color: rgb(161, 159, 159);
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: none;
+    width: 100%;
+    padding: 7px 110px;
+    border-radius: 4px;
+    margin-left: 3px;
+    text-align: center;
+    display: inline;
+}
 
 /* container on the top with todays weather */
 .todays-weather {
