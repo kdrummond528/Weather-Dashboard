@@ -27,4 +27,6 @@ The following screenshot shows the weather dashboard's appearance and functional
 
 Feel free to [email me](mailto:k.drummond528@gmail.com) with any questions, comments, or requests.
 
-Checkout my [GitHub profile](https://github.com/kdrummond528)!
+Checkout my [GitHub](https://github.com/kdrummond528)!
+
+View [My Portfolio](https://kdrummond528.github.io/Personal-Portfolio/)!
