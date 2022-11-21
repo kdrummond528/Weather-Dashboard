@@ -19,6 +19,8 @@ The following screenshot shows the weather dashboard's appearance and functional
 
 ![myweatherdashboard](./Assets/5dayweatherdashboard.png)
 
+Screen Recording [Video](https://drive.google.com/file/d/1rAEOebiLqQoEYrh3wnedSU4lG0ZHFTTQ/view) displaying the Weather Dashboard's functionality.
+
 [Back to top](#weather-dashboard)
 
 ## Links to My Weather Dashboard
