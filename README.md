@@ -1,20 +1,30 @@
 # Weather Dashboard
-This challenge called to create a weather dashboard that would run in the browser with data from another application's API. I chose to use the weather data from openweathermap.org for my API. When you first deploy the application it will automatically load weather data for Atlanta. If you enter another city name in the search bar, it will then load the data for the new city. The weather data included in the 5-day forecast is the temperature, wind, and humidity.
+A 5-Day Weather Dashboard Application.
 
-## Mock-Up
-The following image shows what the intended web application's appearance and functionality should be:
+## Table of Contents
+* [Description and Usage](#description-and-usage)
+* [My Weather Dashboard](#my-weather-dashboard)
+* [Links to My Weather Dashboard](#links-to-my-weather-dashboard)
+* [Questions](#questions)
 
-![mock-up](./assets/06-server-side-apis-homework-demo.png)
+## Description and Usage
+
+This application uses the [OpenWeatherMap](https://openweathermap.org/api) API for weather data. When you first deploy the application it will automatically load weather data for San Diego. If you enter another city name in the search bar, it will then load the data for the new city. The weather data included in the 5-day forecast are the temperature, wind, and humidity values.
 
 ## My Weather Dashboard
-![myweatherdashboard](./Assets/mydashboard.png)
 
-## Challenges Making Weather Dashboard
-Getting the API to function properly was the most difficult and time-consuming part of this challenge, but I learned a lot from this challenge that will help me in the future when using API's.
+The following screenshot shows the weather dashboard's appearance and functionality is:
 
-I ran out of time and was unable to include the search history in the aside, change the date format from day of the week to exact date, and include the report for the day above the 5-day forecast.
+![myweatherdashboard](./Assets/5dayweatherdashboard.png)
 
 ## Links to My Weather Dashboard
 
-URL of the GitHub repository: https://github.com/kdrummond528/Weather-Dashboard
-URL of the functional, deployed application: https://kdrummond528.github.io/Weather-Dashboard/
+- [URL for the GitHub repository](https://github.com/kdrummond528/Weather-Dashboard)
+
+- [Link for the deployed application](https://kdrummond528.github.io/Weather-Dashboard/)
+
+## Questions
+
+Feel free to [email me](mailto:k.drummond528@gmail.com) with any questions, comments, or requests.
+
+Checkout my [GitHub profile](https://github.com/kdrummond528)!
