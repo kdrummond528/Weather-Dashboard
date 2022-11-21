@@ -11,17 +11,23 @@ A 5-Day Weather Dashboard Application.
 
 This application uses the [OpenWeatherMap](https://openweathermap.org/api) API for weather data. When you first deploy the application it will automatically load weather data for San Diego. If you enter another city name in the search bar, it will then load the data for the new city. The weather data included in the 5-day forecast are the temperature, wind, and humidity values.
 
+[Back to top](#weather-dashboard)
+
 ## My Weather Dashboard
 
 The following screenshot shows the weather dashboard's appearance and functionality is:
 
 ![myweatherdashboard](./Assets/5dayweatherdashboard.png)
 
+[Back to top](#weather-dashboard)
+
 ## Links to My Weather Dashboard
 
 - [URL for the GitHub repository](https://github.com/kdrummond528/Weather-Dashboard)
 
 - [Link for the deployed application](https://kdrummond528.github.io/Weather-Dashboard/)
+
+[Back to top](#weather-dashboard)
 
 ## Questions
 
@@ -30,3 +36,5 @@ Feel free to [email me](mailto:k.drummond528@gmail.com) with any questions, comm
 Checkout my [GitHub](https://github.com/kdrummond528)!
 
 View [My Portfolio](https://kdrummond528.github.io/Personal-Portfolio/)!
+
+[Back to top](#weather-dashboard)
